@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    <div class="wrap">
+      <article class="dropdown">
+        <h1 class="dropdown__title">Локация</h1>
+
+        <div class="dashboard dropdown__dashboard">
+          <p class="dashboard__text">ЖК, Округ, район, метро</p>
+          <span class="dashboard__marker"></span>
+        </div>
+
+        <div class="dropdown__content">
+          <ul class="tab-list dropdown__tab-list">
+            <li class="tab-list__item tab-list__item--active" data-item="item-1">жк</li>
+            <li class="tab-list__item" data-item="item-2">округ</li>
+            <li class="tab-list__item" data-item="item-3">район</li>
+            <li class="tab-list__item" data-item="item-4">метро</li>
+          </ul>
+
+          <ul class="select-panel dropdown__select-panel">
+
+          </ul>
+
+          <form action="/" method="post" name="dropdown" class="dropdown__form">
+            <ul class="select-list select-list--active dropdown__select-list" id="item-1">
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-1" value="Академический"
+                  id="gk-1">
+                <label class="option__label" for="gk-1">Академический</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-2" value="Басманный" id="gk-2">
+                <label class="option__label" for="gk-2">Басманный</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-3" value="Замоскворечье"
+                  id="gk-3">
+                <label class="option__label" for="gk-3">Замоскворечье</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-4" value="Измайлово" id="gk-4">
+                <label class="option__label" for="gk-4">Измайлово</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-5" value="Люблино" id="gk-5">
+                <label class="option__label" for="gk-5">Люблино</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-6" value="Люблино" id="gk-6">
+                <label class="option__label" for="gk-6">Замоскворечье</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-7" value="Люблино" id="gk-7">
+                <label class="option__label" for="gk-7">Замоскворечье</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-8" value="Люблино" id="gk-8">
+                <label class="option__label" for="gk-8">Замоскворечье</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-9" value="Люблино" id="gk-9">
+                <label class="option__label" for="gk-9">Замоскворечье</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="gk-10" value="Люблино" id="gk-10">
+                <label class="option__label" for="gk-10">Замоскворечье</label>
+              </li>
+            </ul>
+
+            <ul class="select-list dropdown__select-list" id="item-2">
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-1" value="Академический"
+                  id="district-1">
+                <label class="option__label" for="district-1">Академический 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-2" value="Басманный"
+                  id="district-2">
+                <label class="option__label" for="district-2">Басманный 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-3" value="Замоскворечье"
+                  id="district-3">
+                <label class="option__label" for="district-3">Замоскворечье 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-4" value="Измайлово"
+                  id="district-4">
+                <label class="option__label" for="district-4">Измайлово 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-5" value="Люблино"
+                  id="district-5">
+                <label class="option__label" for="district-5">Люблино 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-6" value="Люблино"
+                  id="district-6">
+                <label class="option__label" for="district-6">Замоскворечье 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-7" value="Люблино"
+                  id="district-7">
+                <label class="option__label" for="district-7">Замоскворечье 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-8" value="Люблино"
+                  id="district-8">
+                <label class="option__label" for="district-8">Замоскворечье 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-9" value="Люблино"
+                  id="district-9">
+                <label class="option__label" for="district-9">Замоскворечье 2</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="district-10" value="Люблино"
+                  id="district-10">
+                <label class="option__label" for="district-10">Замоскворечье 2</label>
+              </li>
+            </ul>
+
+            <ul class="select-list dropdown__select-list" id="item-3">
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-1" value="Академический"
+                  id="area-1">
+                <label class="option__label" for="area-1">Академический 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-2" value="Басманный"
+                  id="area-2">
+                <label class="option__label" for="area-2">Басманный 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-3" value="Замоскворечье"
+                  id="area-3">
+                <label class="option__label" for="area-3">Замоскворечье 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-4" value="Измайлово"
+                  id="area-4">
+                <label class="option__label" for="area-4">Измайлово 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-5" value="Люблино" id="area-5">
+                <label class="option__label" for="area-5">Люблино 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-6" value="Люблино" id="area-6">
+                <label class="option__label" for="area-6">Замоскворечье 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-7" value="Люблино" id="area-7">
+                <label class="option__label" for="area-7">Замоскворечье 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-8" value="Люблино" id="area-8">
+                <label class="option__label" for="area-8">Замоскворечье 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-9" value="Люблино" id="area-9">
+                <label class="option__label" for="area-9">Замоскворечье 3</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="area-10" value="Люблино"
+                  id="area-10">
+                <label class="option__label" for="area-10">Замоскворечье 3</label>
+              </li>
+            </ul>
+
+            <ul class="select-list dropdown__select-list" id="item-4">
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-1" value="Академический"
+                  id="metro-1">
+                <label class="option__label" for="metro-1">Академический 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-2" value="Басманный"
+                  id="metro-2">
+                <label class="option__label" for="metro-2">Басманный 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-3" value="Замоскворечье"
+                  id="metro-3">
+                <label class="option__label" for="metro-3">Замоскворечье 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-4" value="Измайлово"
+                  id="metro-4">
+                <label class="option__label" for="metro-4">Измайлово 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-5" value="Люблино"
+                  id="metro-5">
+                <label class="option__label" for="metro-5">Люблино 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-6" value="Люблино"
+                  id="metro-6">
+                <label class="option__label" for="metro-6">Замоскворечье 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-7" value="Люблино"
+                  id="metro-7">
+                <label class="option__label" for="metro-7">Замоскворечье 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-8" value="Люблино"
+                  id="metro-8">
+                <label class="option__label" for="metro-8">Замоскворечье 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-9" value="Люблино"
+                  id="metro-9">
+                <label class="option__label" for="metro-9">Замоскворечье 4</label>
+              </li>
+              <li class="select-list__option option">
+                <input class="visually-hidden option__input" type="checkbox" name="metro-10" value="Люблино"
+                  id="metro-10">
+                <label class="option__label" for="metro-10">Замоскворечье 4</label>
+              </li>
+            </ul>
+          </form>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

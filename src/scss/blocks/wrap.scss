@@ -1,0 +1,6 @@
+.wrap {
+  @include min-max(375px, 1920px);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}

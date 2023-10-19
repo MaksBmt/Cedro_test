@@ -1,0 +1,54 @@
+.option {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-neutral;
+    }
+
+    &:last-child {
+        padding-bottom: 48px;
+    }
+}
+
+.option__label {
+    position: relative;
+    display: block;
+    @include font(16px, 24px);
+    font-family: Arial;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.option__input {
+    &+label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid $border-primary;
+        transform: translateY(-50%);
+    }
+
+    &:checked+label::before {
+        background-color: $bg-accent;
+    }
+
+    &:checked+label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 10px;
+        height: 10px;
+        transform: translateY(-50%);
+        background-image: url(../img/icons/icons.svg#checkbox);
+        background-repeat: no-repeat;
+    }
+}

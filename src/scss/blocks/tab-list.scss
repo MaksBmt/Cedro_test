@@ -1,0 +1,52 @@
+.tab-list {
+    @include list-reset();
+    display: flex;
+
+    padding: 0 16px;
+    border-bottom: 1px solid $border-primary;
+}
+
+.tab-list__item {
+    position: relative;
+    font-size: 16px;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-family: RobotoCondensed;
+
+    color: $color-text-tertiary;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 0;
+    }
+
+    &:hover {
+        color: $color-text-primary;
+        font-family: Roboto Condensed Medium;
+
+        &::before {
+            height: 2px;
+            background-color: $border-strong;
+        }
+    }
+
+    &--active {
+        position: relative;
+        color: $color-text-primary;
+        font-family: Roboto Condensed Medium;
+
+        &::before {
+            height: 1px;
+            background-color: $border-strong;
+        }
+    }
+}

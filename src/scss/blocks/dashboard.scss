@@ -1,0 +1,62 @@
+.dashboard {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 40px;
+
+    background-color: $bg-neutral;
+    border: 1px solid $border-primary;
+    border-radius: 12px;
+
+    cursor: pointer;
+    z-index: 500;
+
+    &:hover {
+        border-color: $color-border-primary-hover;
+    }
+}
+
+.dashboard__text {
+    position: relative;
+    margin: 0;
+    margin-right: auto;
+    font-size: 16px;
+    font-family: Roboto Condensed Medium;
+    font-weight: medium;
+    color: $color-text-primary;
+    text-transform: uppercase;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: -24px;
+        transform: translateY(-50%);
+        background-image: url(../img/icons/icons.svg#search);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.dashboard__marker {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-family: Roboto Condensed Medium;
+    color: $white;
+    border-radius: 50%;
+    border: 1px solid $border-primary;
+    background-color: $bg-accent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &--active {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+}
