@@ -365,6 +365,7 @@ img[alt] {
   z-index: 100;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#FFF));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 100%);
+  pointer-events: none;
 }
 
 .select-list--active {
@@ -380,10 +381,6 @@ img[alt] {
 
 .option:hover {
   background-color: rgba(2, 22, 45, 0.05);
-}
-
-.option:last-child {
-  padding-bottom: 48px;
 }
 
 .option__label {
